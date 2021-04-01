@@ -19,14 +19,10 @@ const Navbar = () => {
           )}
           {!user && (
             <NavLink className="nav-item nav-link" to="/login">
-              Login
+              Login / SignUp
             </NavLink>
           )}
-          {!user && (
-            <NavLink className="nav-item nav-link" to="/register">
-              Register
-            </NavLink>
-          )}
+
           {user && (
             <NavLink className="nav-item nav-link" to="/login">
               Logout

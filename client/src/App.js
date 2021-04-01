@@ -13,13 +13,14 @@ class App extends Component {
         <Router>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Landing} />
+           
             <Route path="/login" component={Login} />
             {user && (
               <Route exact path="/">
                 <Home user={user} />
               </Route>
             )}
+             <Route exact path="/" component={Landing} />
           </Switch>
         </Router>
       </div>

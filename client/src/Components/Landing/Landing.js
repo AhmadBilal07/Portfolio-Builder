@@ -10,21 +10,13 @@ const Landing = () => {
         fermentum massa justo sit amet risus.
       </p>
       <p>
-        <Link className="nav-item nav-link" to="/register">
-          <a className="btn btn-lg btn-success"  role="button">
-            Sign up today
-          </a>
+        <Link className="nav-item nav-link" to="/login">
+          <button type="button" className="btn btn-primary">
+            Sign Up Today
+          </button>
         </Link>
       </p>
-      {/* <!-- Button trigger modal --> */}
-      <button
-        type="button"
-        className="btn btn-primary"
-        data-toggle="modal"
-        data-target="#exampleModal"
-      >
-        Launch demo modal
-      </button>
+      
     </div>
   );
 };
